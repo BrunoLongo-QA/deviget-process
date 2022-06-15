@@ -1,0 +1,30 @@
+{
+    "name": "nasa-api-test",
+    "version": "1.0.0",
+    "description": "NASA Test For  Deviget Interview Process - © 2022 Bruno Longo <bruno_pereira_longo@hotmail.com>",
+    "main": "index.js",
+    "scripts": {
+        "cy:open": "npx cypress open --config-file ./cypress/config/dev-stage.js",
+        "cy:run": "npx cypress run --config-file ./cypress/config/dev-stage.js --spec ./cypress/integration/3-deviget/curiosity-spec.js",
+        "cy:init": "cypress install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://github.com/BrunoLongo-QA/SDET-Backend"
+    },
+    "author": "Bruno Longo",
+    "license": "MIT",
+    "devDependencies": {
+        "cypress": "^9.4.1",
+        "cypress-file-upload": "^5.0.8",
+        "cypress-grep": "^2.13.1",
+        "cypress-iframe": "^1.0.1",
+        "cypress-xpath": "^1.6.2"
+    },
+    "bugs": {
+        "url": "https://github.com/BrunoLongo-QA/SDET-Backend/issues"
+    },
+    "dependencies": {
+        "lodash": "4.17.21"
+    }
+}
